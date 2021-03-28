@@ -103,14 +103,41 @@ link rel="stylesheet" href="style-3.1.2..css". Переобувание зако
       <td>Теперь возьмём в квадратные скобки сылку (см. в бок.,жми на слово)</td>
       <td><a href="#takoe">периход</a><br>
     Надпмсей много подсветим нужную.Скопируем colspan="3"- из подвала таблицы. И в style-3.1.2..css<br>
-изобразим следующее:    [colspan="3"]{
+изобразим следующее:
+[colspan="3"]{
     color: chocolate;
 }   <br>
 Теперь надпись в цвете.</td>
   </tr>
   <tr>
+      <td>Продолжим. На этот раз тема class в CSS(см. на право).</td>
+      <td>class Это некое единство. И селектор class позволяет одинаково выделять разные элементы.<br>
+    В style-3.1.2./css Напишем следующее.<br>
+    .table-rgb{<br>
+        color:rgb(0, 128, 107);<br>
+    }<br>
+    .table-blue{<br>
+        color: blue;<br>
+    }<br>    
+И .table-rgb в первую и третью таблицы.(сылка ячейкой выше). Вышло-table class="table-rgb" border="2"<br>
+А .table-blue в вторую и четвёрту3ю таблицы(сылка там же). Вышло-table class="table-blue" border="2"</td>
+  </tr>
+  <tr>
+      <td> Опять см. на право.</td>
+      <td>Продолжим про class. Теперь выделим текст в, подопытных страницах, жирным. В style-3.1.2..css делаем новую запись.<br>
+        .table-bold{<br>
+            font-weight: bold;<br>
+        }<br>
+    И вставляем .table-bold в первую и третью таблицы. Вышло-table class="table-rgb table-bold" border="2"<br>
+Внимание! Таким образом можно вставлять множество стилей. Тут пробелы идут как запятые.</td>
+  </tr>
+  <tr>
+      <td>Или ещё один пример.(см. на право.)</td>
+      <td>Тем же .table-bold выделим текст в нижней ячейке.Вышло-td p class="table-bold" Закрываем голову /head /p /td </td>
+    </tr>
+  <tr>
     <td>Закрываем голову /head</td>
-    <td>Закрываем голову /head</td>
+    <td><p class="table-bold">Закрываем голову /head</p></td>
 </tr>
 <tr>
     <td>Открываем тело body</td>
@@ -283,7 +310,7 @@ link rel="stylesheet" href="style-3.1.2..css". Переобувание зако
     </table>
     <hr>
     <hr>
-        <table class="table-rgb" border="2">
+        <table class="table-rgb table-bold" border="2">
                 <thead>
                     <tr>
                         <th>Тэги(Название и обозначение)</th>
@@ -339,7 +366,7 @@ link rel="stylesheet" href="style-3.1.2..css". Переобувание зако
                 </tr>
                 </tfoot>
         </table>
-                        <table class="table-rgb" border="2">
+                        <table class="table-rgb table-bold" border="2">
                             <thead>
                                 <tr>
                                     <th>Тэги(Название и обозначение)</th>
