@@ -11,4 +11,10 @@ table{
 .table-blue{
     color: blue;
 
-}    
+}
+.table-bold{
+    font-weight: bold;
+}
+.boreji > li{
+    color: darkgoldenrod;
+}
