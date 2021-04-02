@@ -124,7 +124,7 @@ link rel="stylesheet" href="style-3.1.2..css". Переобувание зако
   </tr>
   <tr>
       <td> Опять см. на право.</td>
-      <td>Продолжим про class. Теперь выделим текст в, подопытных страницах, жирным. В style-3.1.2..css делаем новую запись.<br>
+      <td>Продолжим про class. Теперь выделим текст в, подопытных таблицах, жирным. В style-3.1.2..css делаем новую запись.<br>
         .table-bold{<br>
             font-weight: bold;<br>
         }<br>
@@ -223,21 +223,35 @@ link rel="stylesheet" href="style-3.1.2..css". Переобувание зако
     для одного из списков ul class="bareji" и вписываю этот class в stayle-3.1.2..css. то выдиляется только один список.Такая надпись<br>
     .boreji > li{<br>
         color: darkgoldenrod;<br>
-    }</td>
+    }<br>
+В html документе это выгдядит так:  ul class="boreji"</td>
 </tr>
 <tr>
-    <td>Тэг *a* с атрибутом href создают ссылку. <a href="https://www.youtube.com/watch?v=IEaR7a9-idg"> Переход на онлайн репититора.</a><br>
+    <td>(См. версию CSS)(В право)</td>
+    <td>Изменим размер шрифта в пикселях и поменяем цвет сылки.(См. ниже.) </td>
+</tr>
+<tr>
+    <td>Тэг *a* с атрибутом href создают ссылку. <a class="pila" href="https://www.youtube.com/watch?v=IEaR7a9-idg"> Переход на онлайн репититора.</a><br>
     Вот так: a href="https://www.youtube.com/watch?v=IEaR7a9-idg"> Переход на онлайн репититора. /a</td>
-    <td>Тэг *a* с атрибутом href создают ссылку. <a href="https://www.youtube.com/watch?v=IEaR7a9-idg"> Переход на онлайн репититора.</a><br>
-        Вот так: a href="https://www.youtube.com/watch?v=IEaR7a9-idg"> Переход на онлайн репититора. /a</td>
+    <td><h5>Сноска 1</h5><br>
+        Для задания размеров шрифта в style-3.1.2..css. запишем следующие:<br>
+        .font-size-md{<br>
+            font-size: 25px;<br>
+        }<br>
+        И вставляем font-size-md в тэг "a". Вот, что полдучилось:<a class="font-size-md" href="https://www.youtube.com/watch?v=IEaR7a9-idg"> Переход на онлайн репититора.</a><br>
+        Вот так: a class="font-size-md" href="https://www.youtube.com/watch?v=IEaR7a9-idg"> Переход на онлайн репититора. /a</td>
 </tr>
 <tr>
     <td>*b* Выделяет <b>слово</b>, текст, б<b>у</b>кву жирным.<br>
     a href="https://www.youtube.com/watch?v=QVJgsIyO7NU" target="_blank"    b Что переводится-ОТКРЫТЬ в другом окне. /b  /a <br>
     <a href="https://www.youtube.com/watch?v=QVJgsIyO7NU" target="_blank"><b>Что переводится-ОТКРЫТЬ в другом окне.</b></a></td>
-    <td>*b* Выделяет <b>слово</b>, текст, б<b>у</b>кву жирным.<br>
-        a href="https://www.youtube.com/watch?v=QVJgsIyO7NU" target="_blank"    b Что переводится-ОТКРЫТЬ в другом окне. /b  /a <br>
-        <a href="https://www.youtube.com/watch?v=QVJgsIyO7NU" target="_blank"><b>Что переводится-ОТКРЫТЬ в другом окне.</b></a></td>
+    <td><h5>Сноска-2</h5><br>
+        Следующий селектор раскрасит сылку. В style-3.1.2..css это выглядит так:<br>
+        .font-size-md.color-red{<br>
+            color: red;<br>
+        }<br>
+        И добавим в тэг "а". Вот так: a class="font-size-md color-red" href="https://www.youtube.com/watch?v=QVJgsIyO7NU" target="_blank"    b Что переводится-ОТКРЫТЬ в другом окне. /b  /a <br>
+        <a class="font-size-md color-red" href="https://www.youtube.com/watch?v=QVJgsIyO7NU" target="_blank"><b>Что переводится-ОТКРЫТЬ в другом окне.</b></a></td>
         </tr>
         <tr>
     <td> id="ideveloper" Позволяет идентефецировать любой элемент этого же документа.(Создаются ссылки.)( p h1 id="ideveloper"  Начало  /h1 (Строка 1) /p )<br>
