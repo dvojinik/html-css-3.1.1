@@ -18,3 +18,9 @@ table{
 .boreji > li{
     color: darkgoldenrod;
 }
+.font-size-md{
+    font-size: 25px;
+}
+.font-size-md.color-red{
+    color:red;
+}
